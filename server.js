@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // Use your custom rate-limiting middleware
 const limiter = rateLimitMiddleware({
   windowMs: 60 * 1000, // 1 minute
-  max: 3, // 3 requests per minute
+  max: 5, // 5 requests per minute
   message: 'Too many requests from this IP, please try again later.',
 });
 console.log('Middleware should start here...');

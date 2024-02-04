@@ -1,5 +1,5 @@
 const rateLimitMiddleware = (options) => {
-    const { windowMs = 60 * 1000, max = 3, message = 'Too many requests, please try again later.' } = options;
+    const { windowMs = 60 * 1000, max = 5, message = 'Too many requests, please try again later.' } = options;
   
     let requestQueue = [];
   
